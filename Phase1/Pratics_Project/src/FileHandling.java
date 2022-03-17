@@ -15,13 +15,13 @@ public class FileHandling {
         }
         String data = "Welcome Deepak....";
         Files.write(Paths.get("D:\\Simpli_file\\e.txt"), data.getBytes());
-        System.out.println("Fiile Written Successfully");
+        System.out.println("File Written Successfully");
         FileWriter writer= new FileWriter(file);
         writer.append(data);
         writer.append(data);
         writer.append(data);
         writer.close();
-        System.out.println("Fiile Append Operation Done Successfully");
+        System.out.println("File Append Operation Done Successfully");
         BufferedReader reader = new BufferedReader(new FileReader("D:\\Simpli_file\\e.txt"));
         String line = reader.readLine();
         while (line != null) {
@@ -29,6 +29,6 @@ public class FileHandling {
             line = reader.readLine();
         }
         reader.close();
-        System.out.println("Fiile Readed Successfully");    
+        System.out.println("File Readed Successfully");    
     }
 }

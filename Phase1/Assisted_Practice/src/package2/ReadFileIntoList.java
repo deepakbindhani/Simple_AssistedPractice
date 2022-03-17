@@ -3,7 +3,6 @@ import java.util.*;
 import java.nio.charset.StandardCharsets; 
 import java.nio.file.*; 
 import java.io.*; 
-
 public class ReadFileIntoList {
 	public static List<String> readFileInList(String fileName) 
 	{ 
